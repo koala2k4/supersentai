@@ -1,0 +1,27 @@
+/* Đặt lại lề và font mặc định */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 50%;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+/* Nền với ảnh yell.png, co chiều rộng toàn màn hình, giữ tỷ lệ chiều cao */
+body {
+    background: url('image/sunflower.png') no-repeat center center;
+    background-size: 100% auto;         /* Rộng full, cao tự điều chỉnh theo tỷ lệ ảnh */
+    background-attachment: fixed;       /* Giữ ảnh nền cố định khi cuộn */
+    background-color: #d6c22f;             /* Màu nền dự phòng nếu ảnh không tải được */
+    color: #333;
+}
+
+/* Hộp chứa nội dung có nền mờ để dễ đọc */
+.container {
+    background-color: rgba(255, 255, 255, 0.85); /* nền trắng mờ */
+    padding: 50px 30px;
+    max-width: 600px;
+    margin: 100px auto;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
